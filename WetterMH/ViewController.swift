@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftChart
+import SVProgressHUD
 
 
 class ViewController: UIViewController, ChartDelegate, CanRecieve, wetterApiDelegate{
@@ -71,6 +72,7 @@ class ViewController: UIViewController, ChartDelegate, CanRecieve, wetterApiDele
     
     func updateStatistics(){
         
+        SVProgressHUD.dismiss()
         print("DIAGRAMM NEU ZEICHNEN (\(stationsliste.station[stationsliste.returnArrayIndexStation(stationsliste.aktuelleId)].name))")
         
         chart2.removeAllSeries()
@@ -164,7 +166,11 @@ class ViewController: UIViewController, ChartDelegate, CanRecieve, wetterApiDele
         stationsliste.delegate = self
         
         logtext.text = "Starting Up ..."
+        
+        SVProgressHUD.show()
+        
         standort.text = ""
+        
         tempLabel.text = ""
         zeitLabel.text = ""
         
