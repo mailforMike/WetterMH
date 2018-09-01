@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (4.7.3)
+  - SVProgressHUD (2.2.5)
   - SwiftChart (1.0.1)
 
 DEPENDENCIES:
   - Alamofire
+  - SVProgressHUD
   - SwiftChart
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - SVProgressHUD
     - SwiftChart
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftChart: ba767a678d568a5ee22d419e146a0582865e1aff
 
-PODFILE CHECKSUM: b9ea6f5e65f393064a3ddb24a60a6c1640045eff
+PODFILE CHECKSUM: 68d419c6768805affc928a28ff255e3abd451bcd
 
 COCOAPODS: 1.5.3

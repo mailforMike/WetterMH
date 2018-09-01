@@ -10,6 +10,7 @@ target 'WetterMH' do
   #pod 'SwiftyJSON'
   #pod 'Charts'
   pod 'SwiftChart'
+  pod 'SVProgressHUD'
 
 end
 
