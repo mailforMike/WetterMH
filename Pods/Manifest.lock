@@ -1,26 +1,20 @@
 PODS:
   - Alamofire (4.7.3)
-  - Charts (3.1.1):
-    - Charts/Core (= 3.1.1)
-  - Charts/Core (3.1.1)
   - SwiftChart (1.0.1)
 
 DEPENDENCIES:
   - Alamofire
-  - Charts
   - SwiftChart
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
-    - Charts
     - SwiftChart
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
   SwiftChart: ba767a678d568a5ee22d419e146a0582865e1aff
 
-PODFILE CHECKSUM: 6a7ce968c88733361e44fbadd8b0a1217ffd0141
+PODFILE CHECKSUM: b9ea6f5e65f393064a3ddb24a60a6c1640045eff
 
 COCOAPODS: 1.5.3

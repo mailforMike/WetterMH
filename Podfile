@@ -8,7 +8,7 @@ target 'WetterMH' do
 
   pod 'Alamofire'
   #pod 'SwiftyJSON'
-  pod 'Charts'
+  #pod 'Charts'
   pod 'SwiftChart'
 
 end
