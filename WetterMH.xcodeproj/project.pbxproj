@@ -15,7 +15,6 @@
 		4C703B7C2129844200218A57 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C703B7B2129844200218A57 /* SettingsViewController.swift */; };
 		4C81AF2921283356003C3EE5 /* station_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C81AF2821283356003C3EE5 /* station_model.swift */; };
 		4C81AF2B21283E45003C3EE5 /* wetter_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C81AF2A21283E45003C3EE5 /* wetter_model.swift */; };
-		4CAD06E5212F4A50009C74FC /* hilfsfunktionen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAD06E4212F4A50009C74FC /* hilfsfunktionen.swift */; };
 		5E6F30886C587945E30D1B7F /* Pods_WetterMH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA5CC284EA6122D55460E7A /* Pods_WetterMH.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +31,6 @@
 		4C703B7B2129844200218A57 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		4C81AF2821283356003C3EE5 /* station_model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = station_model.swift; sourceTree = "<group>"; };
 		4C81AF2A21283E45003C3EE5 /* wetter_model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wetter_model.swift; sourceTree = "<group>"; };
-		4CAD06E4212F4A50009C74FC /* hilfsfunktionen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hilfsfunktionen.swift; sourceTree = "<group>"; };
 		8EA5CC284EA6122D55460E7A /* Pods_WetterMH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WetterMH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,7 +76,6 @@
 				4C605C70212823EC004B24A0 /* Assets.xcassets */,
 				4C605C72212823EC004B24A0 /* LaunchScreen.storyboard */,
 				4C605C75212823EC004B24A0 /* Info.plist */,
-				4CAD06E4212F4A50009C74FC /* hilfsfunktionen.swift */,
 			);
 			path = WetterMH;
 			sourceTree = "<group>";
@@ -216,7 +213,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C81AF2B21283E45003C3EE5 /* wetter_model.swift in Sources */,
-				4CAD06E5212F4A50009C74FC /* hilfsfunktionen.swift in Sources */,
 				4C81AF2921283356003C3EE5 /* station_model.swift in Sources */,
 				4C605C6C212823EC004B24A0 /* ViewController.swift in Sources */,
 				4C703B7C2129844200218A57 /* SettingsViewController.swift in Sources */,
