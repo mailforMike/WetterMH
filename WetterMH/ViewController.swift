@@ -13,7 +13,6 @@ import SwiftChart
 
 class ViewController: UIViewController, ChartDelegate, CanRecieve, wetterApiDelegate{
    
-    
     var stationsliste = WetterStationsListe(id: 11035)
     
     //var aktualisieren : Bool = true
