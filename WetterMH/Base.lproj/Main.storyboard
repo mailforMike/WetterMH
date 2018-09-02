@@ -84,8 +84,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Wetter MH v2" id="lnV-X2-B4g">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="refresh" id="GrE-p5-vX8"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="edit" id="Q2D-Df-HHW"/>
+                        <barButtonItem key="backBarButtonItem" title="zurück" id="n3B-TO-jNR"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="refresh" id="GrE-p5-vX8">
+                            <connections>
+                                <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" id="sVJ-Vb-pTb"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="edit" id="Q2D-Df-HHW">
+                            <connections>
+                                <action selector="settingsButtonPressed:" destination="BYZ-38-t0r" id="GDr-pz-r41"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="chart2" destination="Puh-8I-tyZ" id="H6J-0D-CvV"/>
@@ -114,18 +123,6 @@
                                     <constraint firstAttribute="height" constant="160" id="seR-d5-vfw"/>
                                 </constraints>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHm-ZH-ydd">
-                                <rect key="frame" x="127.5" y="607" width="120" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="bJi-P8-P8o"/>
-                                    <constraint firstAttribute="width" constant="120" id="mtt-VP-e0r"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="fertig"/>
-                                <connections>
-                                    <action selector="zurueckButon:" destination="xhn-Yn-mKO" eventType="touchUpInside" id="2uF-97-bfo"/>
-                                </connections>
-                            </button>
                             <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0NY-Ox-Odq">
                                 <rect key="frame" x="0.0" y="64" width="375" height="160"/>
                                 <constraints>
@@ -137,8 +134,6 @@
                         <constraints>
                             <constraint firstItem="gDH-JF-rN7" firstAttribute="top" secondItem="0NY-Ox-Odq" secondAttribute="bottom" id="4y6-VN-o3l"/>
                             <constraint firstItem="0NY-Ox-Odq" firstAttribute="leading" secondItem="HOD-J6-YrN" secondAttribute="leading" id="Hbt-oC-s95"/>
-                            <constraint firstItem="zHm-ZH-ydd" firstAttribute="centerX" secondItem="ADg-1r-gm6" secondAttribute="centerX" id="Hpa-nc-KBu"/>
-                            <constraint firstItem="HOD-J6-YrN" firstAttribute="bottom" secondItem="zHm-ZH-ydd" secondAttribute="bottom" constant="10" id="P4z-Nv-cg2"/>
                             <constraint firstItem="gDH-JF-rN7" firstAttribute="leading" secondItem="HOD-J6-YrN" secondAttribute="leading" id="n8k-bI-cxb"/>
                             <constraint firstItem="gDH-JF-rN7" firstAttribute="trailing" secondItem="HOD-J6-YrN" secondAttribute="trailing" id="o4B-Wy-sTO"/>
                             <constraint firstItem="0NY-Ox-Odq" firstAttribute="trailing" secondItem="HOD-J6-YrN" secondAttribute="trailing" id="vsE-cg-MLG"/>

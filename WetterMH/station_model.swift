@@ -49,7 +49,7 @@ class WetterStationsListe{
     let url_base = "http://at-wetter.tk/api/v1/"
     let url_stations = "http://at-wetter.tk/api/v1/stations"
     
-    let tage = 32 // wieviele Tage sollen geladen von der api geladen werden?
+    let tage = 5 // wieviele Tage sollen geladen von der api geladen werden?
     
     enum Einheit : String {
         case temp = "t"
