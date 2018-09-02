@@ -180,7 +180,8 @@ class ViewController: UIViewController, ChartDelegate, CanRecieve, wetterApiDele
     
     
     @IBAction func refreshButtonPressed(_ sender: Any) {
-        
+        print("refresch")
+
         if (stationsliste.alleFertigGeladen == true) {
             stationsliste.getAll()
         } else {
@@ -191,7 +192,7 @@ class ViewController: UIViewController, ChartDelegate, CanRecieve, wetterApiDele
     
     
     @IBAction func settingsButtonPressed(_ sender: Any) {
-        
+        print("Button Settings")
         performSegue(withIdentifier: "goToSettings", sender: self)
         
     }

@@ -44,9 +44,11 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if (pickerView.tag == 1) {
             self.stationsId = self.stationsliste?.station[row].id
+            self.delegate?.reciveDate(stationsID: self.stationsId!, tageAnzeigen: self.tage!)
         }
         if (pickerView.tag == 2) {
             self.tage = row+1;
+            self.delegate?.reciveDate(stationsID: self.stationsId!, tageAnzeigen: self.tage!)
         }
     }
     
@@ -84,11 +86,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func zurueckButon(_ sender: Any) {
-        
-        delegate?.reciveDate(stationsID: self.stationsId!, tageAnzeigen: self.tage!)
-        dismiss(animated: true, completion: nil)
-    }
+  
     
     /*
     // MARK: - Navigation
