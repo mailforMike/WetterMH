@@ -54,9 +54,13 @@ class ViewController: UIViewController, ChartDelegate, CanRecieve, wetterApiDele
     
     func didTouchChart(_ chart: Chart, indexes: [Int?], x: Double, left: CGFloat) {
         
-        zeitLabel.text = "\(stationsliste.station[stationsliste.returnArrayIndexStation(stationsliste.aktuelleId)].wetterDaten.zeit[Int(x)])"
+        let index = (stationsliste.station[stationsliste.returnArrayIndexStation(stationsliste.aktuelleId)].wetterDaten.zeit.count) - ((tageAnzeige * 24) - Int(x)-1)
         
-        tempLabel.text = "\(stationsliste.station[stationsliste.returnArrayIndexStation(stationsliste.aktuelleId)].wetterDaten.temp[Int(x)])°C"
+        //print ("index: \(index)")
+        
+        zeitLabel.text = "\(stationsliste.station[stationsliste.returnArrayIndexStation(stationsliste.aktuelleId)].wetterDaten.zeit[index])"
+        
+        tempLabel.text = "\(stationsliste.station[stationsliste.returnArrayIndexStation(stationsliste.aktuelleId)].wetterDaten.temp[index])°C"
         
         zeitLabel.center.x = left
         tempLabel.center.x = left
